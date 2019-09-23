@@ -1,0 +1,17 @@
+micronaut:
+  application:
+    name: store-service
+  server:
+    port: 8003
+eureka:
+  client:
+    registration:
+      enabled: true
+    defaultZone: "http://localhost:8765/eureka/"
+datasources:
+  default:
+    url: jdbc:postgresql://localhost/store?characterEncoding=UTF-8&useSSL=false
+    driverClassName: org.postgresql.Driver
+    username: postgres
+    password: postgres
+    dialect: POSTGRES
